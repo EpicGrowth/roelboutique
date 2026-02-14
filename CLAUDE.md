@@ -6,10 +6,12 @@ Roel Boutique B&B — a heritage boutique bed & breakfast website for a property
 
 ## Tech Stack
 
-- **Website**: Static HTML/CSS (The Cappa boutique-hotel template by DuruThemes)
+- **Website**: Static HTML/CSS (The Cappa template by DuruThemes)
 - **Framework**: Bootstrap 5, jQuery 3.7.1
 - **Booking**: Cloudbeds Booking Engine Plus (Immersive Experience 2.0 web components)
-- **Hosting**: Cloudflare Pages (planned)
+- **Property code**: `egP6Av`
+- **Hosting (dev)**: GitHub Pages — https://epicgrowth.github.io/roelboutique/
+- **Hosting (prod)**: Cloudflare Pages (planned)
 - **Runtime**: Bun / Node.js
 - **Language**: TypeScript (for any build tooling)
 
@@ -18,17 +20,35 @@ Roel Boutique B&B — a heritage boutique bed & breakfast website for a property
 ```
 roelboutique/
 ├── CLAUDE.md
-├── CLOUDBEDS_BOOKING_ENGINE_INTEGRATION.md   # Cloudbeds embed guide (template-aligned)
+├── CLOUDBEDS_BOOKING_ENGINE_INTEGRATION.md   # Cloudbeds embed guide
+├── index.html                                # Landing page linking both variants
+├── site-boutique/                            # Variant A: boutique-hotel template
+│   ├── index.html                            # Customized with Roel content
+│   ├── css/  js/  img/  fonts/               # Template assets
+│   └── mail.php
+├── site-demo2/                               # Variant B: demo2-dark template
+│   ├── index.html                            # Customized with Roel content
+│   ├── css/  js/  img/  fonts/               # Template assets (CSS recolored)
+│   └── mail.php
 ├── roel-documentation/                       # Brand & strategy docs
 │   ├── Roel_Brand_Guidelines.md              # Colors, fonts, voice, logo, photography
 │   ├── Roel_Website_Sitemap_Content_Brief.md # Sitemap, page specs, template mapping
 │   ├── Roel_Website_Content.md               # Ready-to-use page copy
 │   ├── Cloudbeds_Strategy.md                 # PMS/channel/payment/ops strategy
 │   └── Roel-Research.pdf                     # Market research data
-├── roel-template/                            # HTML template variants (22 themes)
-│   └── boutique-hotel/                       # ← Active template base
+├── roel-template/                            # Original HTML template variants (22 themes)
+│   ├── boutique-hotel/                       # Source for site-boutique/
+│   └── demo2-dark/                           # Source for site-demo2/
 └── roel-template-instructions/               # Template documentation & usage guide
 ```
+
+## Live Preview (GitHub Pages)
+
+- **Comparison page**: https://epicgrowth.github.io/roelboutique/
+- **Boutique variant**: https://epicgrowth.github.io/roelboutique/site-boutique/
+- **Demo2 variant**: https://epicgrowth.github.io/roelboutique/site-demo2/
+
+Deploys automatically on push to `main`.
 
 ## Design System (from template)
 
@@ -48,17 +68,7 @@ roelboutique/
 
 ## Development
 
-### Setup
-
-```bash
-bun install
-```
-
-### Run
-
-```bash
-bun dev
-```
+Preview via GitHub Pages — push to `main` and changes go live automatically.
 
 ## Conventions
 
