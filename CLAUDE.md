@@ -70,6 +70,27 @@ Deploys automatically on push to `main`.
 
 Preview via GitHub Pages — push to `main` and changes go live automatically.
 
+## Skills (Slash Commands)
+
+| Command | Description |
+|---------|-------------|
+| `/start` | Begin a work session — gather context, set goals, create branch |
+| `/end` | End a session — simplify, commit, push, update log |
+| `/simplify` | Review and clean up recently modified HTML/CSS files |
+| `/deploy` | Deploy to GitHub Pages (dev) or Cloudflare Pages (prod) |
+| `/rules` | Code conventions and project rules |
+| `/brand` | Brand quick reference — colors, fonts, voice, key facts |
+
+### Session Lifecycle
+
+```
+/start → work → /simplify → /end
+```
+
+- `/start` at the beginning of every session
+- `/end` when you're done — it runs `/simplify` automatically before committing
+- `/deploy` if you need to push changes mid-session
+
 ## Conventions
 
 - Keep code minimal and clean
@@ -77,3 +98,20 @@ Preview via GitHub Pages — push to `main` and changes go live automatically.
 - Follow existing patterns when adding new features
 - **NO custom CSS.** Use only the template's existing CSS classes. If a section doesn't have a matching template class, restructure the HTML to fit the template — don't invent new styles. The template's design system is the source of truth.
 - All documentation is markdown (no .docx) — keep docs in `roel-documentation/`
+
+## Branching
+
+- **`main`**: Minor changes, content updates, docs — push directly
+- **Feature branches**: Significant changes (new pages, layout rework, multi-file refactors) — branch, PR, squash-merge
+- Never force-push without explicit permission
+
+## Never Do
+
+- Add custom CSS — template classes only
+- Add inline styles (`style="..."`)
+- Modify files in `roel-template/` (original archive)
+- Create a build pipeline (static files, no build needed)
+- Use `sudo apt install` for dev tools
+- Commit `.env` files or credentials
+- Use `git add .` or `git add -A` — stage specific files
+- Delete uncommitted work without asking
