@@ -6,3 +6,5 @@ node_modules/
 dist/
 .claude/*
 !.claude/skills/
+!.claude/agents/
+!.claude/settings.json
