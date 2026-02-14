@@ -75,5 +75,5 @@ Preview via GitHub Pages — push to `main` and changes go live automatically.
 - Keep code minimal and clean
 - Prefer TypeScript for all source files
 - Follow existing patterns when adding new features
-- Use the template's existing CSS classes — minimize custom CSS
+- **NO custom CSS.** Use only the template's existing CSS classes. If a section doesn't have a matching template class, restructure the HTML to fit the template — don't invent new styles. The template's design system is the source of truth.
 - All documentation is markdown (no .docx) — keep docs in `roel-documentation/`
