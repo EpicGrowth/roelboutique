@@ -1066,7 +1066,7 @@ color: #b95c47;
     .navbar {
         padding-left: 0px;
         padding-right: 0px;
-        background: transparent;
+        background: rgba(0,0,0,0.3);
         padding-top: 0px;
         padding-bottom: 0px;
         height: 90px;
