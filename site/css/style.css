@@ -43,6 +43,15 @@
 ------------------------------------------------------- */
 
 
+/* ======= Roel Logo Font ======= */
+@font-face {
+    font-family: 'Auttan';
+    src: url('../fonts/Auttan-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* ======= Basic style ======= */
 html,
 body {
@@ -903,7 +912,7 @@ color: #b95c47;
     margin-bottom: 0px;
 }
 .nav-scroll .logo-wrapper .logo h2 {
-    font-family: 'Gilda Display', serif;
+    font-family: 'Auttan', 'Gilda Display', serif;
     font-size: 27px;
     font-weight: 400;
     display: block;
@@ -933,7 +942,7 @@ color: #b95c47;
     float: left;
 }
 .logo-wrapper .logo h2 {
-    font-family: 'Gilda Display', serif;
+    font-family: 'Auttan', 'Gilda Display', serif;
     font-size: 27px;
     font-weight: 400;
     display: block;
