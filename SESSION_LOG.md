@@ -62,3 +62,22 @@
 - Removed site-boutique/ directory — site/ is now the sole active directory
 - Attempted skyline logo extraction from PDF (user will redo in Canva as PNG)
 **Commit:** 0c76473
+
+## 2026-02-17 — design-polish
+**Goal:** Polish existing pages — refine hero, nav, sections, mobile experience
+**Branch:** main
+**Status:** Complete
+**Changes:**
+- Fixed hero slide 2 mobile focal point (right center → 30% center) to show bed
+- Updated phone number to +356 2167 7007 across all 5 display instances and 3 tel: links
+- Added full street address to footer (San Francisk Road, 7/8 Sqaq L-Erwieh, BML 9063)
+- Replaced About section images with actual property photos (roel-entrance.jpg, roel-guest-reading.jpg)
+- Replaced Welcome Drink card image with breakfast nook photo (roel-breakfast-nook.jpg)
+- Replaced Local Insider Tips card with guest reading photo (roel-guest-relaxing.jpg)
+- Renamed "Harbour Views" card to "Heritage Setting" with updated copy
+- Replaced Heritage Setting card image with terrace photo (roel-terrace-heritage.jpg)
+- Added heritage paragraph to "Your Stay at Roel" section
+- Replaced Testimonials background with Room 101 wide shot (roel-room-wide.jpg)
+- Replaced Breakfast Tradition photo with breakfast spread (roel-breakfast-spread.jpg)
+- Replaced Heritage & History photo with guest at heritage desk (roel-heritage-interior.jpg)
+- Batch-processed 114 property photos with dark/moody template style to photography/Edited/
