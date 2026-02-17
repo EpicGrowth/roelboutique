@@ -818,7 +818,7 @@ color: #b95c47;
     left: 0;
     top: 0;
     width: 100%;
-    background: rgba(0,0,0,0.5);
+    background: #000;
     z-index: 99;
     padding-right: 0;
     padding-left: 0;
