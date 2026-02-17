@@ -4,6 +4,10 @@ node_modules/
 .env.*
 *.log
 dist/
+canva/
+photography/
+roel-font/
+__pycache__/
 .claude/*
 !.claude/skills/
 !.claude/agents/
