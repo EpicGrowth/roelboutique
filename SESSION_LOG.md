@@ -49,4 +49,16 @@
 ## 2026-02-17 — content-update
 **Goal:** Update content
 **Branch:** main
-**Status:** In Progress
+**Status:** Complete
+**Changes:**
+- Added subtle dark background to navbar on initial load (rgba 0,0,0,0.3) for logo/menu readability
+- Fixed mobile navbar: media query was overriding background to transparent
+- Increased mobile header height to 120px, centered logo and hamburger
+- Mobile menu now drops below header as overlay (no longer resizes header)
+- Added per-slide background-position via data-position attribute for mobile focal points
+- Replaced hero slide 3 (terrace) with room-painting photo (IMG_1952-HDR)
+- Flipped room-bed hero slide horizontally
+- Fixed slider transition flash (bg-blck changed to #000)
+- Removed site-boutique/ directory — site/ is now the sole active directory
+- Attempted skyline logo extraction from PDF (user will redo in Canva as PNG)
+**Commit:** 0c76473
