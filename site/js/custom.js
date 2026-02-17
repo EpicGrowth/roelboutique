@@ -73,6 +73,9 @@ $(function () {
         if ($(this).attr("data-background")) {
             $(this).css("background-image", "url(" + $(this).data("background") + ")");
         }
+        if ($(this).attr("data-position")) {
+            $(this).css("background-position", $(this).data("position"));
+        }
     });
 
     

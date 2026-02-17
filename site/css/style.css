@@ -834,7 +834,7 @@ color: #b95c47;
     left: 0;
     top: 0;
     width: 100%;
-    background: transparent;
+    background: rgba(0,0,0,0.3);
     z-index: 99;
     padding-right: 0;
     padding-left: 0;
@@ -920,7 +920,7 @@ color: #b95c47;
     position: relative;
     color: #b95c47;
     margin-bottom: 0;
-    padding: 20px 0;
+    padding: 10px 0;
     letter-spacing: 1px;
     text-align: center;
 }
@@ -950,7 +950,7 @@ color: #b95c47;
     position: relative;
     color: #b95c47;
     margin-bottom: 0;
-    padding: 20px 0;
+    padding: 10px 0;
     letter-spacing: 1px;
     text-align: center;
 }

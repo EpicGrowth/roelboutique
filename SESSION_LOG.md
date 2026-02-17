@@ -45,3 +45,8 @@
 - Replaced Breakfast Included section photo with actual breakfast area image
 - Added photography/ and roel-font/ to .gitignore
 **Commit:** 2a11d66
+
+## 2026-02-17 — content-update
+**Goal:** Update content
+**Branch:** main
+**Status:** In Progress
