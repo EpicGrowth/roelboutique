@@ -400,7 +400,7 @@ blockquote cite:before {
 
 /* background & color */
 .bg-blck {
-    background: #222;
+    background: #000;
 }
 .bg-cream {
     background: #f8f5f0 ;
@@ -1069,17 +1069,17 @@ color: #b95c47;
         background: rgba(0,0,0,0.3);
         padding-top: 0px;
         padding-bottom: 0px;
-        height: 90px;
+        min-height: 120px;
     }
     .nav-scroll {
         background: #fff;
     }
     .logo-wrapper {
         float: left;
-        padding: 26px 0 26px 15px;
+        padding: 0 0 0 15px;
     }
     .nav-scroll .logo-wrapper {
-        padding: 26px 0 26px 15px;
+        padding: 0 0 0 15px;
         background-color: transparent;
     }
     .nav-scroll .logo-img {
@@ -1088,6 +1088,10 @@ color: #b95c47;
     .navbar .logo {
         text-align: left;
         margin-left: 0px;
+    }
+    .logo-wrapper .logo h2 {
+        padding: 0;
+        font-size: 60px;
     }
     .nav-scroll .logo {}
     .logo-img {
@@ -1099,7 +1103,7 @@ color: #b95c47;
         margin-right: 0px;
         outline: none !important;
         background: transparent;
-        margin-top: 10px;
+        margin-top: 0px;
         border: none;
     }
     .navbar button:hover {
@@ -1176,6 +1180,10 @@ color: #b95c47;
     }
 
     .navbar .navbar-collapse {
+        position: absolute;
+        top: 120px;
+        left: 0;
+        right: 0;
         max-height: 450px;
         overflow: auto;
         background: #fff;
