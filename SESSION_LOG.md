@@ -96,3 +96,15 @@
 - Corrected ferry time from "Five Minutes" to "Ten Minutes to the Capital"
 - Footer title updated to "About Roel Boutique"
 **Commit:** 0fad6ea (squash merge via PR #1)
+
+## 2026-02-27 — deploy-check
+**Goal:** Bug fixes / polish — check latest updates are live
+**Branch:** main
+**Status:** Complete
+**Changes:**
+- Verified local and remote are in sync (commit 6f80db8)
+- Diagnosed GitHub Pages not serving latest build — last successful deploy was from 0fad6ea
+- Triggered manual GitHub Pages rebuild via API
+- Confirmed local preview at localhost:8000 shows correct images
+- Identified issues for future sessions: dead room-details.html links, stock Courtyard Room image (7.jpg), meta description still says "5 min ferry"
+**Commit:** none (no code changes)
