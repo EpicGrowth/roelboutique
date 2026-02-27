@@ -82,3 +82,17 @@
 - Replaced Heritage & History photo with guest at heritage desk (roel-heritage-interior.jpg)
 - Batch-processed 114 property photos with dark/moody template style to photography/Edited/
 **Commit:** 45fa009
+
+## 2026-02-25 — homepage-content
+**Goal:** Update homepage sections and images
+**Branch:** homepage-content → squash-merged to main
+**Status:** Complete
+**Changes:**
+- Replaced Heritage Suite & Harbour View stock photos with seamless panoramic split from Room 102 property photo
+- Replaced Terrace Room stock photo with Room 101 bed-focused crop
+- Replaced Limestone Room stock photo with Room 102 landscape crop (yellow cushions, harbour painting)
+- Added real neighbourhood photos (Three Cities harbour, Valletta ferry view)
+- Updated CTA band background with real room photo
+- Corrected ferry time from "Five Minutes" to "Ten Minutes to the Capital"
+- Footer title updated to "About Roel Boutique"
+**Commit:** 0fad6ea (squash merge via PR #1)
