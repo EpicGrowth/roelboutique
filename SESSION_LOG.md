@@ -109,6 +109,18 @@
 - Identified issues for future sessions: dead room-details.html links, stock Courtyard Room image (7.jpg), meta description still says "5 min ferry"
 **Commit:** none (no code changes)
 
+## 2026-02-28 — content-update
+**Goal:** Build individual room pages and apply client content updates
+**Branch:** content-update
+**Status:** Complete
+**Changes:**
+- Built 5 room detail pages (Heritage Suite, Terrace Room, Limestone Room, Cargo View Room, Courtyard Room) with photo sliders, galleries with lightbox, amenities sidebar, booking CTA, and cross-links
+- Updated homepage room cards with correct links, prices, and names (Harbour View → Cargo View)
+- Applied client content changes from Google Doc: breakfast description, tea & coffee amenity (replaced welcome drink), content doc sync
+- Removed 12 unused placeholder images, cleaned up old harbour-view.jpg
+- Added site/.claude/ to gitignore
+**Commit:** 1c9a8db (squash-merged PR #2)
+
 ## 2026-02-28 — bug-fixes
 **Goal:** Fix known issues — dead room-details.html links, stock Courtyard Room image (7.jpg), meta description "5 min ferry"
 **Branch:** main
