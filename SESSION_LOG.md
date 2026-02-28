@@ -112,4 +112,13 @@
 ## 2026-02-28 — bug-fixes
 **Goal:** Fix known issues — dead room-details.html links, stock Courtyard Room image (7.jpg), meta description "5 min ferry"
 **Branch:** main
-**Status:** In Progress
+**Status:** Complete
+**Changes:**
+- Fixed meta description: "5 min ferry" → "10 min ferry to Valletta"
+- Replaced 15 dead room-details.html links with # anchors (room pages to be built later from template)
+- Replaced stock Courtyard Room image (7.jpg) with real property photo (roel-room-wide.jpg)
+- Added terrace exterior photo (IMG_1909-HDR) as testimonials background
+- Cropped heritage interior photo to remove excess lower body
+- Replaced dark/vignetted section photos with bright originals (heritage interior, Valletta ferry view, Three Cities harbour)
+- Resized oversized images for web (25MB → 293KB, 21MB → 654KB)
+**Commit:** 927be72
