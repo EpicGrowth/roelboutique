@@ -14,7 +14,7 @@
 
 **Where Malta Feels Like Home**
 
-A boutique bed & breakfast in the heart of Malta's historic Three Cities
+In the heart of Cospicua, Malta, a charming guesthouse is awaiting you.
 
 [Book Now CTA button] [Check Availability date picker widget]
 
@@ -34,7 +34,7 @@ Rated 9.9 out of 10 on Booking.com, Roel is one of Malta's highest-rated accommo
 
 **Personal Hospitality** — Ledia personally welcomes every guest with a complimentary drink and insider tips to make your Malta experience unforgettable. Need restaurant recommendations? A day-trip plan? Just ask.
 
-**Morning Ritual** — Each morning begins with a freshly prepared breakfast featuring local Maltese ingredients, served [on the terrace / in the breakfast room] with views of [the harbour / the historic streets].
+**Morning Ritual** — Every morning awakens to a vast variety of continental breakfast featuring local Maltese ingredients, sweet and salty bites, fresh fruit, served in the breakfast room secluded in the silence of true history.
 
 **Gateway to Malta** — Step outside and you're in the heart of the Three Cities. A five-minute ferry ride takes you to Valletta. The entire island opens up from your doorstep.
 
@@ -104,7 +104,7 @@ From EUR [price] per night — [View Details button] [Book This Room button]
 - Flat-screen TV
 - Hairdryer
 - Daily housekeeping
-- Complimentary welcome drink on arrival
+- Complimentary tea and coffee and water bottle.
 
 ---
 
@@ -150,9 +150,9 @@ Whether you're here for a romantic getaway, a solo adventure, or a few days of g
 
 Roel Boutique B&B is housed in a [describe the building: age, original purpose, architectural style]. Like much of Malta's built heritage, its walls are carved from globigerina limestone — the same honey-gold stone that gives the entire island its warm, luminous character.
 
-[Describe the restoration: how the property was transformed from its original use into a boutique B&B. What was preserved (original features) and what was modernised. Any interesting historical details or discoveries during restoration.]
+The property was transformed from its original of two separate townhouses into a boutique B&B. The adjacent door to the entrance, we have kept one of the original.
 
-Today, Roel offers [number] rooms, each with its own personality, along with [common areas: terrace, breakfast room, lounge]. The name "Roel" [explain the meaning or origin of the name if there's a story behind it].
+Today, Roel offers 11 rooms, each with its own personality, along with a terrace, breakfast room / lounge]. The name "Roel" in itself holds our heart. It was very much a cliche moment. Nonetheless, it was what we both stood for and why we worked so hard. Its name is the merged names of our two daughters, Rose and Elena.
 
 ### What Makes Roel Different
 
@@ -313,7 +313,7 @@ Title tags under 60 characters. Meta descriptions 150–160 characters.
 |------|-------|-------------|
 | Homepage | Roel Boutique B&B \| Boutique Accommodation in Malta's Three Cities | Rated 9.9/10 on Booking.com. Heritage boutique B&B in Cospicua, Malta. Personal hospitality, breakfast included, 5 min ferry to Valletta. Book direct. |
 | Rooms | Our Rooms \| Roel Boutique B&B Malta | Explore our heritage rooms with original Maltese limestone, modern comforts, and personal touches. Free Wi-Fi, breakfast included, AC. Book direct for best rates. |
-| About | About Roel \| Meet Your Host in Malta's Three Cities | Meet Ledia, your host at Roel Boutique B&B. Discover the story of our heritage property in Cospicua and why guests rate us 9.9/10 on Booking.com. |
+| About | About Roel \| Meet Your Host in Malta's Three Cities | Meet Ledia, your host at Roel Boutique B&B. Discover the story of our heritage property in Cospicua and why guests rate us 9.5/10 on Booking.com. |
 | Location | Location & Getting Here \| Roel Boutique B&B Cospicua | Find Roel Boutique B&B in Cospicua, Three Cities, Malta. 5 min ferry to Valletta, 20 min from airport. Directions, map, and transport options. |
 | Local Guide | Things to Do in Malta \| Local Guide by Roel B&B | Insider guide to Malta from your Three Cities hosts. Best restaurants, day trips, hidden gems, and cultural highlights. Plan your perfect Malta trip. |
 | FAQ | Frequently Asked Questions \| Roel Boutique B&B Malta | Check-in times, breakfast, parking, airport transfers, cancellation policy, and more. Everything you need to know before staying at Roel B&B. |
