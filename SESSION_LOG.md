@@ -108,3 +108,8 @@
 - Confirmed local preview at localhost:8000 shows correct images
 - Identified issues for future sessions: dead room-details.html links, stock Courtyard Room image (7.jpg), meta description still says "5 min ferry"
 **Commit:** none (no code changes)
+
+## 2026-02-28 — bug-fixes
+**Goal:** Fix known issues — dead room-details.html links, stock Courtyard Room image (7.jpg), meta description "5 min ferry"
+**Branch:** main
+**Status:** In Progress
