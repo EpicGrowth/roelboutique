@@ -134,3 +134,8 @@
 - Replaced dark/vignetted section photos with bright originals (heritage interior, Valletta ferry view, Three Cities harbour)
 - Resized oversized images for web (25MB → 293KB, 21MB → 654KB)
 **Commit:** 927be72
+
+## 2026-03-02 — about-page
+**Goal:** Build the About / Our Story page
+**Branch:** about-page
+**Status:** In Progress

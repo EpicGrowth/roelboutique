@@ -50,6 +50,7 @@
     font-weight: 400;
     font-style: normal;
     font-display: swap;
+    font-display: swap;
 }
 
 /* ======= Basic style ======= */
@@ -1989,7 +1990,8 @@ hr {
 }
 
 .banner-header h1 {
-    font-size: 60px;
+    font-family: 'Auttan', 'Gilda Display', serif;
+    font-size: 80px;
     color: #fff;
     position: relative;
 }
