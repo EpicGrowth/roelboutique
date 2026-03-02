@@ -138,4 +138,12 @@
 ## 2026-03-02 — about-page
 **Goal:** Build the About / Our Story page
 **Branch:** about-page
-**Status:** In Progress
+**Status:** Complete
+**Changes:**
+- Built About page (site/about.html) with reception banner, welcome intro, heritage story, host section, 4 differentiator pillars, Three Cities neighbourhood, testimonials, and booking CTA
+- Added reception desk photo (roel-reception.jpg, resized to 224KB)
+- Updated About nav/footer links across homepage and 5 room pages
+- Applied Auttan logo font to banner-header h1 (80px white)
+- Fixed 2 broken Learn More links on homepage
+- Added font-display: swap to Auttan @font-face
+**Commit:** bc3572c (squash-merged PR #3)
