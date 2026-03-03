@@ -147,3 +147,23 @@
 - Fixed 2 broken Learn More links on homepage
 - Added font-display: swap to Auttan @font-face
 **Commit:** bc3572c (squash-merged PR #3)
+
+## 2026-03-02 — cloudbeds-integration
+**Goal:** Cloudbeds Booking Engine integration
+**Branch:** cloudbeds-integration
+**Status:** Complete
+**Changes:**
+- Migrated to Cloudbeds Booking Engine Plus (Immersive Experience 2.0 web components)
+- Added dedicated booking page (site/book.html)
+- Added cb-book-now-button across all pages
+**Commit:** aaf9bfb (squash-merged PR #4)
+
+## 2026-03-02 — contact-page
+**Goal:** Build the Contact page
+**Branch:** main
+**Status:** In Progress
+
+## 2026-03-03 — cloudbeds-update
+**Goal:** Custom domain testing for Cloudbeds
+**Branch:** cloudbeds-update
+**Status:** In Progress
