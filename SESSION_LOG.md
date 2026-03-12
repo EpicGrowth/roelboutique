@@ -167,3 +167,19 @@
 **Goal:** Custom domain testing for Cloudbeds
 **Branch:** cloudbeds-update
 **Status:** In Progress
+
+## 2026-03-12 — remove-stars-booking
+**Goal:** Client feedback — remove star ratings, switch to slide-out booking only
+**Branch:** remove-stars → merged to main
+**Status:** Complete
+**Changes:**
+- Replaced 5-star rating icons with "Cospicua · Three Cities · Malta" text divider in all hero sections
+- Removed stars from room content sections and CTA band sections
+- Kept stars only in testimonial sections (guest review ratings)
+- Removed dedicated book.html page — all booking now via Cloudbeds slide-out panel
+- Nav "Book Now" uses regular link that triggers hidden cb-book-now-button via JS
+- Footer "Book" links replaced with cb-book-now-button triggers
+- Added inline Cloudbeds CSS (data-cb-immersive-experience-root) to match template palette
+- Added close-label="Close" to slide-out triggers
+- Identified Cloudbeds dashboard color changes needed: Primary #b95c47, Header #222222
+**Commits:** afedc54, fb1540e, 19bc247, f7bf52b
