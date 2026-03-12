@@ -183,3 +183,22 @@
 - Added close-label="Close" to slide-out triggers
 - Identified Cloudbeds dashboard color changes needed: Primary #b95c47, Header #222222
 **Commits:** afedc54, fb1540e, 19bc247, f7bf52b
+
+## 2026-03-12 — homepage-polish
+**Goal:** Homepage content and photo updates
+**Branch:** main
+**Status:** Complete
+**Changes:**
+- Hid room prices on homepage (removed h6 price lines from all 5 room cards)
+- Changed "Call us" to "WhatsApp us" on index, about, contact pages
+- Fixed WhatsApp number to +35699318150 across all 8 pages
+- Replaced Cloudbeds widget in footer with plain "Book Now" text links (all 8 pages)
+- Hero button: "Rooms & Suites" → "Rooms & Breakfast"
+- Swapped Terrace Room homepage photo to rooftop terrace/breakfast shot (IMG_1950)
+- Swapped exterior photo to original outsidea.jpg (cropped Google watermark)
+- Swapped Heritage Setting image to Bormla street view (heritage-bormla.png)
+- Swapped insider tips photo to original IMG_4947 (guest in reception)
+- Added limestone wall texture background for "Your Stay at Roel" section (30% overlay)
+- Replaced phone/reservation block with additional paragraph
+- Swapped testimonials background to rooftop terrace (IMG_1929)
+**Commits:** de68bbd, 2282d4c, 83bf209, e53595c, 0b5202f, cd7fbb2, 3c4df4e, c88987f
