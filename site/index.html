@@ -14,7 +14,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=Barlow:wght@400&family=Gilda+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/plugins.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/cloudbeds.css" data-cb-immersive-experience-root />
+    <!-- Cloudbeds Immersive Experience 2.0 — must be inline <style> per CB docs -->
+    <style data-cb-immersive-experience-root>
+      :is(#cb-bookingengine, .cb-bookingengine-root) {
+        /* Primary action buttons — rust terracotta */
+        button[class*="primary"], .cb-button-primary,
+        [class*="SearchButton"], [class*="search-button"], [class*="cta-button"] {
+          background-color: #b95c47 !important;
+          border-color: #b95c47 !important;
+          color: #fff !important;
+        }
+        button[class*="primary"]:hover, .cb-button-primary:hover,
+        [class*="SearchButton"]:hover, [class*="search-button"]:hover, [class*="cta-button"]:hover {
+          background-color: #a04d3b !important;
+          border-color: #a04d3b !important;
+        }
+        /* Header bar — dark charcoal */
+        [class*="header"], [class*="Header"] {
+          background-color: #222 !important;
+        }
+        /* Fonts */
+        h1, h2, h3, h4, h5, h6 { font-family: 'Gilda Display', serif !important; }
+        p, span, div, label, input, select, textarea { font-family: 'Barlow', sans-serif !important; }
+        /* Links */
+        a { color: #b95c47 !important; }
+        a:hover { color: #a04d3b !important; }
+        /* Calendar selected dates */
+        [class*="selected"], [class*="Selected"] { background-color: #b95c47 !important; }
+        /* Price highlights */
+        [class*="price"], [class*="Price"] { color: #b95c47 !important; }
+      }
+    </style>
     <script src="https://static1.cloudbeds.com/booking-engine/latest/static/js/immersive-experience/cb-immersive-experience.js" type="text/javascript"></script>
 </head>
 <body>
@@ -672,7 +702,7 @@
     <script src="js/custom.js"></script>
     <!-- Hidden Cloudbeds booking trigger (opened via nav link and CTA clicks) -->
     <div class="cb-booking-trigger" style="display:none;">
-        <cb-book-now-button property-code="egP6Av" label="Book Now"></cb-book-now-button>
+        <cb-book-now-button property-code="egP6Av" label="Book Now" close-label="Close"></cb-book-now-button>
     </div>
 </body>
 </html>
