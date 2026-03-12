@@ -44,7 +44,7 @@
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link active" href="index.html#rooms">Rooms</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-item"><cb-book-now-button property-code="egP6Av" label="Book Now" class-name="cb-book-now-nav"></cb-book-now-button></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="document.querySelector('.cb-booking-trigger button').click();return false;">Book Now</a></li>
                 </ul>
             </div>
         </div>
@@ -383,5 +383,9 @@
     <script src="js/datepicker.js"></script>
     <script src="js/smooth-scroll.min.js"></script>
     <script src="js/custom.js"></script>
+    <!-- Hidden Cloudbeds booking trigger (opened via nav link and CTA clicks) -->
+    <div class="cb-booking-trigger" style="display:none;">
+        <cb-book-now-button property-code="egP6Av" label="Book Now"></cb-book-now-button>
+    </div>
 </body>
 </html>

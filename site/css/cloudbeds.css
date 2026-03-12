@@ -85,20 +85,3 @@
   }
 }
 
-/* ======= Book Now Button (nav & inline) ======= */
-.cb-book-now-nav {
-  background: none !important;
-  border: none !important;
-  color: #fff !important;
-  font-family: 'Barlow Condensed', sans-serif !important;
-  font-size: 15px !important;
-  font-weight: 400 !important;
-  text-transform: uppercase !important;
-  letter-spacing: 3px !important;
-  padding: 0 !important;
-  cursor: pointer !important;
-}
-
-.cb-book-now-nav:hover {
-  color: #b95c47 !important;
-}
