@@ -202,3 +202,16 @@
 - Replaced phone/reservation block with additional paragraph
 - Swapped testimonials background to rooftop terrace (IMG_1929)
 **Commits:** de68bbd, 2282d4c, 83bf209, e53595c, 0b5202f, cd7fbb2, 3c4df4e, c88987f
+
+## 2026-03-18 — booking-integration
+**Goal:** Cloudbeds Booking Engine integration work
+**Branch:** booking-integration → merged to main, then continued on main
+**Status:** Complete
+**Changes:**
+- Created thank-you page (site/thank-you.html) for post-booking Cloudbeds redirect
+- Renamed all 5 room types: Heritage Suite→Hide Away, Terrace Room→Terrace Romance, Limestone Room→Lane View, Cargo View→Tugged Away, Courtyard Room→Morning Sunshine
+- Updated Booking.com rating from 9.9 to 9.4 across homepage and about page
+- Added Google 5/5 rating alongside Booking.com rating
+- Replaced all Terrace Romance page photos (8 images) with Room 401 property shots
+- Verified WhatsApp number +35699318150 is correct across all pages
+**Commits:** 4f6a0c1 (PR #6), 21ae68f
