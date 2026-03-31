@@ -215,3 +215,8 @@
 - Replaced all Terrace Romance page photos (8 images) with Room 401 property shots
 - Verified WhatsApp number +35699318150 is correct across all pages
 **Commits:** 4f6a0c1 (PR #6), 21ae68f
+
+## 2026-03-31 — site-polish
+**Goal:** Polish existing pages
+**Branch:** site-polish
+**Status:** In Progress
