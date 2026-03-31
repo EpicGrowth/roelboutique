@@ -218,5 +218,11 @@
 
 ## 2026-03-31 — site-polish
 **Goal:** Polish existing pages
-**Branch:** site-polish
-**Status:** In Progress
+**Branch:** site-polish → squash-merged to main
+**Status:** Complete
+**Changes:**
+- Replaced landline (+356 2167 7007) with WhatsApp (+356 9931 8158) across all 9 pages
+- Hero sidebar: phone icon → WhatsApp Hotline link
+- Replaced 3 placeholder testimonials with 5 real guest reviews (Bartłomiej, Ela, Robert, Marc, Tonia)
+- Added Check Availability CTA section after guest testimonials on homepage
+**Commit:** 0f5fa59 (PR #7)
