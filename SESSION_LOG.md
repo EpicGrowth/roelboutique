@@ -229,5 +229,12 @@
 
 ## 2026-04-22 — room-heroes
 **Goal:** Add hero text, slider numbering, and WhatsApp CTA to all 5 room pages (rooms were feeling bland)
-**Branch:** room-heroes
-**Status:** In Progress
+**Branch:** room-heroes → squash-merged to main
+**Status:** Complete
+**Changes:**
+- Swapped `header slider` → `header slider-fade bg-blck` on all 5 room pages (enables right-side numbered dots + fade transitions)
+- Added `.v-middle caption` per slide: h4 `Boutique Bed & Breakfast · Where Malta Feels Like Home`, h1 room name, location tags (Cospicua · Three Cities · Malta)
+- Added vertical WhatsApp `.reservation` block on the left — matches homepage pattern
+- Removed bounce-down arrow (homepage pattern doesn't use it)
+- Bonus: cleaned expired `GITHUB_TOKEN` export from `~/.bashrc` (was blocking `git push`)
+**Commit:** 9caaae6
