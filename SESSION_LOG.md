@@ -226,3 +226,8 @@
 - Replaced 3 placeholder testimonials with 5 real guest reviews (Bartłomiej, Ela, Robert, Marc, Tonia)
 - Added Check Availability CTA section after guest testimonials on homepage
 **Commit:** 0f5fa59 (PR #7)
+
+## 2026-04-22 — room-heroes
+**Goal:** Add hero text, slider numbering, and WhatsApp CTA to all 5 room pages (rooms were feeling bland)
+**Branch:** room-heroes
+**Status:** In Progress
