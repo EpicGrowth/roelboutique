@@ -49,14 +49,11 @@ $(function () {
     // Navbar scrolling background
     wind.on("scroll", function () {
         var bodyScroll = wind.scrollTop(),
-            navbar = $(".navbar"),
-            logo = $(".navbar .logo> img");
+            navbar = $(".navbar");
         if (bodyScroll > 100) {
             navbar.addClass("nav-scroll");
-            logo.attr('src', 'img/logo-dark.png');
         } else {
             navbar.removeClass("nav-scroll");
-            logo.attr('src', 'img/logo.png');
         }
     });
     
@@ -610,7 +607,7 @@ var form = $('.contact__form'),
     }
     // fail function
     function fail_func(data) {
-        message.fadeIn().removeClass('alert-success').addClass('alert-success');
+        message.fadeIn().removeClass('alert-success').addClass('alert-danger');
         message.text(data.responseText);
         setTimeout(function () {
             message.fadeOut();
@@ -618,12 +615,18 @@ var form = $('.contact__form'),
     }
     form.submit(function (e) {
         e.preventDefault();
-        form_data = $(this).serialize();
-        $.ajax({
-            type: 'POST',
-            url: form.attr('action'),
-            data: form_data
-        }).done(done_func).fail(fail_func);
+        // Google Apps Script is cross-origin and redirects its response, which
+        // trips jQuery's error handler even on success. Send with fetch/no-cors
+        // (the submission still reaches the script) and confirm optimistically.
+        fetch(form.attr('action'), {
+            method: 'POST',
+            mode: 'no-cors',
+            body: new FormData(form[0])
+        }).then(function () {
+            done_func("Thank you — your message was sent. We'll reply shortly.");
+        }).catch(function () {
+            fail_func({ responseText: 'Sorry, something went wrong. Please WhatsApp us instead.' });
+        });
     });
 
 

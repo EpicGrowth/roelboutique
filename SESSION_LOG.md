@@ -238,3 +238,8 @@
 - Removed bounce-down arrow (homepage pattern doesn't use it)
 - Bonus: cleaned expired `GITHUB_TOKEN` export from `~/.bashrc` (was blocking `git push`)
 **Commit:** 9caaae6
+
+## 2026-06-20 — launch-prep
+**Goal:** Final pre-launch review; decide whether to keep hosting on GitHub Pages; connect the Squarespace domain
+**Branch:** launch-prep
+**Status:** In Progress
