@@ -10,8 +10,7 @@ Roel Boutique B&B — a heritage boutique bed & breakfast website for a property
 - **Framework**: Bootstrap 5, jQuery 3.7.1
 - **Booking**: Cloudbeds Booking Engine Plus (Immersive Experience 2.0 web components)
 - **Property code**: `egP6Av`
-- **Hosting (dev)**: GitHub Pages — https://epicgrowth.github.io/roelboutique/
-- **Hosting (prod)**: Cloudflare Pages (planned)
+- **Hosting (prod)**: Cloudflare Pages — builds from `main`, output directory `site/` (serves `site/` as the domain root). Custom domain `roelboutique.com` (registered at Squarespace).
 - **Runtime**: Bun / Node.js
 - **Language**: TypeScript (for any build tooling)
 
@@ -21,34 +20,34 @@ Roel Boutique B&B — a heritage boutique bed & breakfast website for a property
 roelboutique/
 ├── CLAUDE.md
 ├── CLOUDBEDS_BOOKING_ENGINE_INTEGRATION.md   # Cloudbeds embed guide
-├── index.html                                # Landing page linking both variants
-├── site-boutique/                            # Variant A: boutique-hotel template
-│   ├── index.html                            # Customized with Roel content
-│   ├── css/  js/  img/  fonts/               # Template assets
-│   └── mail.php
-├── site-demo2/                               # Variant B: demo2-dark template
-│   ├── index.html                            # Customized with Roel content
-│   ├── css/  js/  img/  fonts/               # Template assets (CSS recolored)
-│   └── mail.php
+├── SESSION_LOG.md                            # Per-session work log
+├── site/                                     # THE LIVE SITE — deployed as the domain root
+│   ├── index.html  about.html  contact.html  thank-you.html
+│   ├── morning-sunshine.html  hide-away.html  lane-view.html
+│   ├── terrace-romance.html  tugged-away.html   # the 5 room pages
+│   └── css/  js/  img/  fonts/                # template assets
 ├── roel-documentation/                       # Brand & strategy docs
 │   ├── Roel_Brand_Guidelines.md              # Colors, fonts, voice, logo, photography
 │   ├── Roel_Website_Sitemap_Content_Brief.md # Sitemap, page specs, template mapping
 │   ├── Roel_Website_Content.md               # Ready-to-use page copy
 │   ├── Cloudbeds_Strategy.md                 # PMS/channel/payment/ops strategy
+│   ├── Launch_Runbook.md                     # Cloudflare Pages + Squarespace DNS + form deploy
 │   └── Roel-Research.pdf                     # Market research data
-├── roel-template/                            # Original HTML template variants (22 themes)
-│   ├── boutique-hotel/                       # Source for site-boutique/
-│   └── demo2-dark/                           # Source for site-demo2/
-└── roel-template-instructions/               # Template documentation & usage guide
+└── tools/
+    └── contact-form/Code.gs                  # Google Apps Script contact-form backend
 ```
 
-## Live Preview (GitHub Pages)
+> Note: the original template archive (`roel-template/`, 22 themes), the
+> superseded `site-demo2/` variant, the empty `site-boutique/`, and the root
+> comparison `index.html` were removed in the launch-prep cleanup (still
+> recoverable from git history). The chosen build lives in `site/`.
 
-- **Comparison page**: https://epicgrowth.github.io/roelboutique/
-- **Boutique variant**: https://epicgrowth.github.io/roelboutique/site-boutique/
-- **Demo2 variant**: https://epicgrowth.github.io/roelboutique/site-demo2/
+## Live Preview (Cloudflare Pages)
 
-Deploys automatically on push to `main`.
+- **Production**: https://roelboutique.pages.dev (custom domain `roelboutique.com` once DNS is pointed)
+- **Local**: `python -m http.server 8000 --directory site` → http://127.0.0.1:8000/
+
+Deploys automatically on push to `main` (Cloudflare Pages, output directory `site/`).
 
 ## Design System (from template)
 
@@ -68,7 +67,7 @@ Deploys automatically on push to `main`.
 
 ## Development
 
-Preview via GitHub Pages — push to `main` and changes go live automatically.
+Preview locally with `python -m http.server 8000 --directory site`. Push to `main` and Cloudflare Pages deploys automatically.
 
 ## Skills (Slash Commands)
 
@@ -77,7 +76,7 @@ Preview via GitHub Pages — push to `main` and changes go live automatically.
 | `/start` | Begin a work session — gather context, set goals, create branch |
 | `/end` | End a session — simplify, commit, push, update log |
 | `/simplify` | Review and clean up recently modified HTML/CSS files |
-| `/deploy` | Deploy to GitHub Pages (dev) or Cloudflare Pages (prod) |
+| `/deploy` | Deploy to Cloudflare Pages (prod) |
 | `/rules` | Code conventions and project rules |
 | `/brand` | Brand quick reference — colors, fonts, voice, key facts |
 
@@ -109,7 +108,6 @@ Preview via GitHub Pages — push to `main` and changes go live automatically.
 
 - Add custom CSS — template classes only
 - Add inline styles (`style="..."`)
-- Modify files in `roel-template/` (original archive)
 - Create a build pipeline (static files, no build needed)
 - Use `sudo apt install` for dev tools
 - Commit `.env` files or credentials
