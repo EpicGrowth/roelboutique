@@ -79,8 +79,35 @@ The domain is registered at **Squarespace Domains**. Two paths:
    (apex + `www` both work, with proxied SSL).
 
 > Recommended: **Option B** — apex domain works cleanly, faster CDN/SSL, and all
-> DNS managed in one place. Note Workspace email (MX records) must be re-created
-> in Cloudflare DNS when moving nameservers, or mail will break.
+> DNS managed in one place. The Epic Growth Cloudflare account already runs 9
+> domains (incl. epicgrowth.com) this way.
+
+### Current roelboutique.com DNS — snapshot 2026-06-20 (preserve email on migration)
+
+Registrar/DNS: **Squarespace** (Google Cloud nameservers `ns-cloud-b{1..4}.googledomains.com`).
+Site currently points to **Squarespace**; email is **Google Workspace**.
+
+| Record | Current value | On migration |
+|---|---|---|
+| MX | `1 smtp.google.com` | **Preserve** (email) |
+| TXT (SPF) | `v=spf1 include:_spf.google.com ~all` | **Preserve** |
+| DKIM `google._domainkey` | `v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArn5Psl/yiuZGDPfnAlHoipq8iyviOS9J87K3SDAMl7IYLAViR3DMQiHu0Ej+zl2X/vbT+fy2VEMA3BLMdQWDj9WK+CgkVKYuJOnhotC0RNhCAvwQOV1XtYnholRcr1xdi0HLBiS7bgo…` | **Preserve** (verify full value imported) |
+| DMARC `_dmarc` | *(none)* | optional — add `v=DMARC1; p=none; rua=mailto:reservations@roelboutique.com` later |
+| A (apex) | `198.49.23.145` (Squarespace) | **Replace** → Cloudflare Pages |
+| www | `ext-sq.squarespace.com` (Squarespace) | **Replace** → Cloudflare Pages |
+
+### Migration steps (Option B), in order — do NOT switch nameservers until step 3
+1. **Add the zone:** Cloudflare dash → **Add a site** → `roelboutique.com` → Free plan.
+   Cloudflare auto-scans and imports the records above.
+2. **Verify the email records imported** (MX `smtp.google.com`, SPF, full DKIM).
+   Then add the website: Pages project → **Custom domains** → add `roelboutique.com`
+   and `www.roelboutique.com` (auto-creates the Pages records, removing the
+   Squarespace A/CNAME).
+3. **Cut over:** Squarespace → Domains → `roelboutique.com` → **Nameservers →
+   Use custom nameservers** → paste the two Cloudflare NS Cloudflare assigned.
+4. Wait for the zone to go **Active** (minutes–hours). Cloudflare issues SSL
+   automatically. Verify `https://roelboutique.com` loads the site **and** send a
+   test email to `reservations@roelboutique.com` to confirm mail still flows.
 
 ---
 
