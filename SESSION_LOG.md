@@ -240,6 +240,15 @@
 **Commit:** 9caaae6
 
 ## 2026-06-20 — launch-prep
-**Goal:** Final pre-launch review; decide whether to keep hosting on GitHub Pages; connect the Squarespace domain
-**Branch:** launch-prep
-**Status:** In Progress
+**Goal:** Final pre-launch review; decide hosting; connect the Squarespace domain — and ship it
+**Branch:** launch-prep → merged to main
+**Status:** Complete — **SITE LAUNCHED at https://roelboutique.com**
+**Changes:**
+- **Hosting:** chose Cloudflare Pages (auto-deploys from `main`, output dir `site/`) over GitHub Pages
+- **Domain:** moved `roelboutique.com` from Squarespace/Google nameservers into Cloudflare; attached apex + www as Pages custom domains; Workspace email (MX/SPF/DKIM) preserved through the cutover; added `www → apex` 301 Page Rule and a `_dmarc` record
+- **Contact form:** replaced dead `mail.php` (no PHP on static hosts) with a Google Apps Script backend (`tools/contact-form/Code.gs`) → emails `reservations@roelboutique.com` + logs to a Google Sheet (header auto-created, fields stored as text to dodge Sheets formula errors); verified end-to-end
+- **Rooms:** renamed pages to match room names (courtyard-room→morning-sunshine, heritage-suite→hide-away, limestone-room→lane-view, terrace-room→terrace-romance, cargo-view→tugged-away) + rewrote all cross-links
+- **SEO:** Open Graph + Twitter tags on all pages; JSON-LD (BedAndBreakfast home, HotelRoom per room); canonical URLs
+- **Brand/UX:** white Roel script logo in the footer; terracotta dot favicon + apple-touch icon; branded `404.html` (fixes Cloudflare soft-404)
+- **Cleanup:** removed dead `mail.php`, 21 template leftover images, and 418 MB of archives (`roel-template/`, `site-demo2/`, etc.); repo 440 MB → 25 MB; updated CLAUDE.md + added `roel-documentation/Launch_Runbook.md`
+**Commits:** c65939c, 2449264, c4426f2, b28919b, bcf887b, e94f94d, 561cbc9, db874b3 (+ this log)
