@@ -25,7 +25,7 @@
  */
 
 var MAIL_TO   = 'reservations@roelboutique.com'; // where enquiries are sent
-var SHEET_ID  = '';                              // optional Google Sheet ID for logging
+var SHEET_ID  = '18TjrOZO3JbTEIIojy93dQ0lwH_bt3pnc73FrTx6wjzc'; // Google Sheet log of enquiries
 var SITE_NAME = 'Roel Boutique B&B';
 
 function doPost(e) {
@@ -59,8 +59,13 @@ function doPost(e) {
     });
 
     if (SHEET_ID) {
+      // Sheets reads a leading + = - @ as a formula; prefix with ' to force text.
+      var asText = function (v) { return /^[=+\-@]/.test(v) ? "'" + v : v; };
       var sheet = SpreadsheetApp.openById(SHEET_ID).getSheets()[0];
-      sheet.appendRow([new Date(), name, email, phone, subject, message]);
+      if (sheet.getLastRow() === 0) {
+        sheet.appendRow(['Date', 'Name', 'Email', 'Phone', 'Subject', 'Message']);
+      }
+      sheet.appendRow([new Date(), asText(name), asText(email), asText(phone), asText(subject), asText(message)]);
     }
 
     return ContentService.createTextOutput('OK');
