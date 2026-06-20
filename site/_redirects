@@ -1,2 +1,0 @@
-# Canonicalise www -> apex (301). Cloudflare Pages processes this file.
-https://www.roelboutique.com/* https://roelboutique.com/:splat 301
