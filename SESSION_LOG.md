@@ -1,9 +1,16 @@
 # Session Log
 
 ## 2026-07-02 — qr-code
-**Goal:** QR code work
+**Goal:** Print-ready QR codes for roelboutique.com
 **Branch:** qr-code
-**Status:** In Progress
+**Status:** Complete
+**Changes:**
+- New `assets/qr/` folder with 6 print-ready QR codes linking to https://roelboutique.com
+- Charcoal (`#1b1b1b`) and terracotta (`#b95c47`) variants: SVG, 4200px PNG, transparent PNG each
+- Error correction H; all PNGs machine-verified to decode
+- README with usage notes (quiet zone, min print size, SVG preferred for Canva)
+- Tried branded variants with centered wordmark badge — rejected, removed
+**Commit:** e6c3a99
 
 ## 2026-02-16 — content-update
 **Goal:** Add social media hrefs to icons, fix hero slider
