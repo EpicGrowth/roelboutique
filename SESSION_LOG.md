@@ -1,5 +1,10 @@
 # Session Log
 
+## 2026-07-02 — qr-code
+**Goal:** QR code work
+**Branch:** qr-code
+**Status:** In Progress
+
 ## 2026-02-16 — content-update
 **Goal:** Add social media hrefs to icons, fix hero slider
 **Branch:** main
