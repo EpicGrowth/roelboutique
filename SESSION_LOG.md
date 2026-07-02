@@ -1,5 +1,10 @@
 # Session Log
 
+## 2026-07-02 — contact form email work
+**Goal:** Fix a specific issue with the contact form email
+**Branch:** contact-form-email
+**Status:** In Progress
+
 ## 2026-07-02 — qr-code
 **Goal:** Print-ready QR codes for roelboutique.com
 **Branch:** qr-code
