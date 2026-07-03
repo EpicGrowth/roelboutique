@@ -1,9 +1,27 @@
 # Session Log
 
-## 2026-07-02 — contact form email work
-**Goal:** Fix a specific issue with the contact form email
-**Branch:** contact-form-email
-**Status:** In Progress
+## 2026-07-02 — contact form email work + content/image overhaul
+**Goal:** Started as a contact-form email fix; expanded into a broad content-accuracy and imagery pass.
+**Branch:** contact-form-email → fast-forward merged to `main`; continued on `main` (all changes deployed live via Cloudflare Pages).
+**Status:** Complete (content/imagery). Contact-form email delivery issue diagnosed but NOT resolved — see open items.
+**Changes:**
+- **Ratings:** replaced numeric claims (9.4/10 Booking.com, 5/5 Google) with "Top Rated on Booking.com and Google" across home + about (meta, hero, body).
+- **Accuracy sweep:** removed false heritage claims (centuries-old limestone walls / original Maltese floor tiles / sun-drenched terraces) from Heritage Setting card, homepage banner, "Our Heritage/Our Story in Stone" block, Hide Away intro, and 2 testimonials. "restored" → "converted" sitewide; dropped "heritage property"; "personally, warmly, and authentically" → "personal, warm, and authentic". "Our Heritage" heading → "Our Legacy" (home + about).
+- **Copy fixes:** softened "Ledia greets/knows every guest" → "strives to meet…/to learn your name"; welcome bullet → "Hospitality that makes you feel at home"; removed all room prices (Our Other Rooms cards + booking CTAs); check-out 10:30 → 10:00; "fresh towels daily" → "fresh towels"; airport transfers line → arrival tips; crib age under 3 → under 2.
+- **Testimonials:** homepage set (5 reviews) made single source of truth — synced to about + contact; replaced profile photos with generated serif-initial SVG avatars (img/team/initials-*.svg); fixed host-name typo "Leida" → "Ledia".
+- **Images:** new Hide Away bathroom + bedroom photos; new Tugged Away bedroom photo; Terrace Romance stitched twin (terrace-room-3) + new DND door photo (terrace-room-4); Morning Sunshine stitched kitchenette+terrace (courtyard-room-3) + added bedside photo (courtyard-room-6); removed shared terrace photo from all 5 room galleries (now a consistent 4 items each).
+- **Phone number:** corrected 9931 8158 → 9931 8150 sitewide (display text, wa.me links, schema telephone).
+- Verified NO custom CSS / inline styles added; div balance and gallery/testimonial counts validated.
+
+**Open items (not done):**
+- **Contact-form email delivery** — enquiries log to the Google Sheet but the notification email to reservations@ isn't arriving. Diagnosed: Apps Script `MailApp.sendEmail` doesn't throw (sheet write proves it), so it's a delivery/sending-account issue (likely non-@roelboutique sender → spam, or a filter). NEEDS: check which Google account owns the Apps Script + reservations@ Spam/All Mail folder.
+- **DMARC "Option A"** — user considering removing `rua=mailto:reservations@roelboutique.com` from the `_dmarc` TXT record (Cloudflare) to stop the daily DMARC report emails. Not yet applied.
+- **Deferred (awaiting decision):** "heritage" wording sweep (Heritage Setting/Hospitality/with Heart, footer "heritage character", meta/schema "Heritage boutique B&B"); ferry-time inconsistency (10 min vs 3 min vs 5 min); delete 4 orphaned images; visual QA screenshots of galleries/avatars.
+
+## 2026-07-02 — qr-code
+**Goal:** Print-ready QR codes for roelboutique.com
+**Branch:** qr-code
+**Status:** Complete
 
 ## 2026-07-02 — qr-code
 **Goal:** Print-ready QR codes for roelboutique.com
